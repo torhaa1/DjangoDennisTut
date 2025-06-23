@@ -3,4 +3,22 @@
 {% block content %}
    <h1>Home Page</h1>
    <p>Welcome to StudyBud!</p>
+
+   <div>
+
+    <div>
+        {% for room in rooms %}
+            <div>
+                <h5>{{room.id}} -- {{ room.name }}</h5>
+            {% comment %} <h2>{{ room.name }}</h2> {% endcomment %}
+        {% endfor %}
+    </div>
+
+
+
+
+
+
 {% endblock %}
+
+
