@@ -1,3 +1,5 @@
 studybud/__pycache__/
 base/__pycache__/
 .vscode/launch.json
+db.sqlite3
+base/migrations/__pycache__/
