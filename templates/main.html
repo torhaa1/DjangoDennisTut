@@ -10,7 +10,15 @@
 
 <body>
     {% include 'navbar.html' %}
-    
+
+    {% if messages %}
+        <ul class="messages">
+            {% for message in messages %}
+        <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+        
     {% block content %}
    <h1>Home Page</h1>
    <p>Welcome to StudyBud!</p>
